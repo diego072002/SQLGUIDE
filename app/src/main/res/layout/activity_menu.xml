@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:text="TextView" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/BtnNivel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ovalo"
+                    android:insetLeft="5dp"
+                    android:insetTop="5dp"
+                    android:insetRight="5dp"
+                    android:insetBottom="5dp"
+                    android:longClickable="false"
+                    android:radius="21dp"
+                    android:saveEnabled="false"
+                    android:text="n"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/BtnNivel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ovalo"
+                    android:insetLeft="5dp"
+                    android:insetTop="5dp"
+                    android:insetRight="5dp"
+                    android:insetBottom="5dp"
+                    android:text="Button" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/BtnNivel3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ovalo"
+                    android:text="5" />
+
+                <TextView
+                    android:id="@+id/espacio1"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/BtnNivel4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ovalo"
+                    android:text="6" />
+
+                <TextView
+                    android:id="@+id/espacio2"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/espacio3"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/BtnNivel5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ovalo"
+                    android:text="5" />
+
+                <TextView
+                    android:id="@+id/espacio4"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/BtnNivel6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ovalo"
+                    android:text="6" />
+
+                <TextView
+                    android:id="@+id/espacio5"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/espacio6"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/BtnNivel7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ovalo"
+                    android:text="5" />
+
+                <TextView
+                    android:id="@+id/espacio7"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/BtnNivel8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ovalo"
+                    android:text="6" />
+
+                <TextView
+                    android:id="@+id/espacio8"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/espacio9"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/BtnNivel9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ovalo"
+                    android:text="5" />
+
+                <TextView
+                    android:id="@+id/espacio10"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/BtnNivel10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ovalo"
+                    android:text="6" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/esp11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/esp12"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/BtnNive11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ovalo"
+                    android:text="5" />
+
+                <TextView
+                    android:id="@+id/espacio13"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/BtnNivel12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ovalo"
+                    android:text="6" />
+
+                <TextView
+                    android:id="@+id/esp14"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/v15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/espacio16"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/BtnNivel13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ovalo"
+                    android:text="5" />
+
+                <TextView
+                    android:id="@+id/espacio17"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/BtnNivel14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ovalo"
+                    android:text="6" />
+
+                <TextView
+                    android:id="@+id/espacio18"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/espacio19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/espacio20"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/BtnNivel15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ovalo"
+                    android:text="5" />
+
+                <TextView
+                    android:id="@+id/espacio21"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/BtnNivel16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ovalo"
+                    android:text="6" />
+
+                <TextView
+                    android:id="@+id/espacio22"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/espacio23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/espacio24"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/BtnNivel17"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ovalo"
+                    android:text="5" />
+
+                <TextView
+                    android:id="@+id/espacio25"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/BtnNivel18"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ovalo"
+                    android:text="6" />
+
+                <TextView
+                    android:id="@+id/espacio26"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/espacio27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/espacio28"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/BtnNivel19"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ovalo"
+                    android:text="5" />
+
+                <TextView
+                    android:id="@+id/espacio29"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/BtnNivel20"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ovalo"
+                    android:text="6" />
+
+                <TextView
+                    android:id="@+id/espacio30"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/espacio31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/espacio32"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/BtnNivel21"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ovalo"
+                    android:text="5" />
+
+                <TextView
+                    android:id="@+id/espacio33"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/BtnNivel22"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ovalo"
+                    android:text="6" />
+
+                <TextView
+                    android:id="@+id/espacio34"
+                    android:layout_width="219dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/espacio35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
