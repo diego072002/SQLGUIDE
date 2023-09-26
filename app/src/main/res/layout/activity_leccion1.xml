@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Leccion1">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Leccion 1"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="En SQL, los datos suelen estar organizados en varias tablas. Por ejemplo, una base de datos de equipos deportivos puede tener las tablas equipos, jugadores y juegos. Una base de datos de bodas puede tener mesas de invitados, vendedores y listas de reproducción de música. Imagine que tenemos una tabla que almacena a los miembros de la familia con el nombre de cada miembro, especie, género y número de libros leídos. Comencemos por tomar todos los datos en una tabla. Tenemos una tabla llamada family_members que se muestra a continuación. Para obtener todos esos datos, ejecute el siguiente comando: SELECT * FROM family_members; El * de arriba significa que todas las columnas serán devueltas, que en este caso son id, nombre, género, especie y num_libros_leidos."
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+            <TableLayout
+                android:layout_width="386dp"
+                android:layout_height="103dp"
+                android:layout_margin="10dp"
+                android:background="@color/black">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="43dp"
+                        android:layout_height="wrap_content"
+                        android:text="Id"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="95dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:text="Genero"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:text="Especie"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="102dp"
+                        android:layout_height="match_parent"
+                        android:text="Num_libros"
+                        android:textAlignment="center" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Diego"
+                        android:textAlignment="center"
+                        android:textColor="#FAF7F7" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="M"
+                        android:textAlignment="center"
+                        android:textColor="#FFFBFB" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Humano"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="200"
+                        android:textAlignment="center"
+                        android:textColor="#F8F7F7" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textAlignment="center"/>
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
