@@ -7,15 +7,35 @@
     tools:context=".Leccion1">
 
     <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        android:layout_width="351dp"
+        android:layout_height="642dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Progreso"
+                android:textColor="#31909E" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:max="20"
+                android:progress="0"
+                android:progressTint="#35DC07" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -30,142 +50,267 @@
                 android:id="@+id/textView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:text="En SQL, los datos suelen estar organizados en varias tablas. Por ejemplo, una base de datos de equipos deportivos puede tener las tablas equipos, jugadores y juegos. Una base de datos de bodas puede tener mesas de invitados, vendedores y listas de reproducción de música. Imagine que tenemos una tabla que almacena a los miembros de la familia con el nombre de cada miembro, especie, género y número de libros leídos. Comencemos por tomar todos los datos en una tabla. Tenemos una tabla llamada family_members que se muestra a continuación. Para obtener todos esos datos, ejecute el siguiente comando: SELECT * FROM family_members; El * de arriba significa que todas las columnas serán devueltas, que en este caso son id, nombre, género, especie y num_libros_leidos."
                 android:textAlignment="center"
-                android:textSize="18dp" />
+                android:textSize="18dp"
+                android:visibility="visible" />
 
-            <TableLayout
-                android:layout_width="386dp"
-                android:layout_height="103dp"
-                android:layout_margin="10dp"
-                android:background="@color/black">
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
-                <TableRow
-                    android:layout_width="match_parent"
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:background="@color/white">
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/EditLeccion1"
+                        android:layout_width="241dp"
+                        android:layout_height="77dp"
+                        android:layout_weight="1"
+                        android:background="#000000"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:hint="Ingresa aqui el comando"
+                        android:inputType="textMultiLine"
+                        android:textColor="#FAFAFA" />
 
                     <TextView
-                        android:id="@+id/textView8"
-                        android:layout_width="43dp"
-                        android:layout_height="wrap_content"
-                        android:text="Id"
-                        android:textAlignment="center" />
+                        android:id="@+id/textView4"
+                        android:layout_width="12dp"
+                        android:layout_height="56dp"
+                        android:layout_weight="1" />
 
-                    <TextView
-                        android:id="@+id/textView13"
+                    <Button
+                        android:id="@+id/button3"
                         android:layout_width="95dp"
-                        android:layout_height="wrap_content"
-                        android:text="Nombre"
-                        android:textAlignment="center"/>
-
-                    <TextView
-                        android:id="@+id/textView10"
-                        android:layout_width="73dp"
-                        android:layout_height="wrap_content"
-                        android:text="Genero"
-                        android:textAlignment="center"/>
-
-                    <TextView
-                        android:id="@+id/textView11"
-                        android:layout_width="75dp"
                         android:layout_height="match_parent"
-                        android:text="Especie"
-                        android:textAlignment="center" />
+                        android:layout_weight="1"
+                        android:onClick="mostrar"
+                        android:text="Correr SQL" />
+                </LinearLayout>
+            </HorizontalScrollView>
 
-                    <TextView
-                        android:id="@+id/textView12"
-                        android:layout_width="102dp"
-                        android:layout_height="match_parent"
-                        android:text="Num_libros"
-                        android:textAlignment="center" />
-                </TableRow>
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                    <TextView
-                        android:id="@+id/textView9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="1"
-                        android:textAlignment="center"
-                        android:textColor="#FFFFFF" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
 
-                    <TextView
-                        android:id="@+id/textView17"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Diego"
-                        android:textAlignment="center"
-                        android:textColor="#FAF7F7" />
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="101dp"
 
-                    <TextView
-                        android:id="@+id/textView16"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="M"
-                        android:textAlignment="center"
-                        android:textColor="#FFFBFB" />
+                        android:background="@color/black">
 
-                    <TextView
-                        android:id="@+id/textView14"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Humano"
-                        android:textAlignment="center"
-                        android:textColor="#FFFFFF" />
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white">
 
-                    <TextView
-                        android:id="@+id/textView15"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="200"
-                        android:textAlignment="center"
-                        android:textColor="#F8F7F7" />
-                </TableRow>
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="43dp"
+                                android:layout_height="wrap_content"
+                                android:text="Id"
+                                android:textAlignment="center" />
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="95dp"
+                                android:layout_height="wrap_content"
+                                android:text="Nombre"
+                                android:textAlignment="center" />
 
-                    <TextView
-                        android:id="@+id/textView21"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=""
-                        android:textAlignment="center"/>
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="73dp"
+                                android:layout_height="wrap_content"
+                                android:text="Genero"
+                                android:textAlignment="center" />
 
-                    <TextView
-                        android:id="@+id/textView22"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=""
-                        android:textAlignment="center"/>
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="75dp"
+                                android:layout_height="match_parent"
+                                android:text="Especie"
+                                android:textAlignment="center" />
 
-                    <TextView
-                        android:id="@+id/textView20"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=""
-                        android:textAlignment="center"/>
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="102dp"
+                                android:layout_height="match_parent"
+                                android:text="Num_libros"
+                                android:textAlignment="center" />
+                        </TableRow>
 
-                    <TextView
-                        android:id="@+id/textView18"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="center"/>
+                        <TableRow
+                            android:id="@+id/Tabla1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="invisible">
 
-                    <TextView
-                        android:id="@+id/textView19"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=""
-                        android:textAlignment="center"/>
-                </TableRow>
+                            <TextView
+                                android:id="@+id/TxtId1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
 
-            </TableLayout>
+                            <TextView
+                                android:id="@+id/TxtNombre1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dave"
+                                android:textAlignment="center"
+                                android:textColor="#FAF7F7" />
+
+                            <TextView
+                                android:id="@+id/TxtGenero1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Masculino"
+                                android:textAlignment="center"
+                                android:textColor="#FFFBFB" />
+
+                            <TextView
+                                android:id="@+id/TxtEspecie1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Humano"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:id="@+id/TxtLibros1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="200"
+                                android:textAlignment="center"
+                                android:textColor="#F8F7F7" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/Tabla2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:visibility="invisible">
+
+                            <TextView
+                                android:id="@+id/TxtId2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2"
+                                android:textColor="#FFFFFF"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/TxtNombre2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mary"
+                                android:textColor="#FFFFFF"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/TxtGenero2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Femenino"
+                                android:textColor="#FFFFFF"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/TxtEspecie2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Humano"
+                                android:textColor="#FFFFFF"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/TxtLibros2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="180"
+                                android:textColor="#FFFFFF"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/Tabla3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="invisible">
+
+                            <TextView
+                                android:id="@+id/TxtId3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3"
+                                android:textColor="#FFFFFF"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/TxtNombre3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pickles"
+                                android:textColor="#FFFFFF"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/TxtGenero3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Masculino"
+                                android:textColor="#FFFFFF"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/TxtEspecie3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Perro"
+                                android:textColor="#FFFFFF"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/TxtLibros3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="#FFFFFF"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
