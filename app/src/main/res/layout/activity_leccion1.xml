@@ -7,8 +7,8 @@
     tools:context=".Leccion1">
 
     <ScrollView
-        android:layout_width="351dp"
-        android:layout_height="642dp"
+        android:layout_width="348dp"
+        android:layout_height="690dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,15 +46,26 @@
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="En SQL, los datos suelen estar organizados en varias tablas. Por ejemplo, una base de datos de equipos deportivos puede tener las tablas equipos, jugadores y juegos. Una base de datos de bodas puede tener mesas de invitados, vendedores y listas de reproducción de música. Imagine que tenemos una tabla que almacena a los miembros de la familia con el nombre de cada miembro, especie, género y número de libros leídos. Comencemos por tomar todos los datos en una tabla. Tenemos una tabla llamada family_members que se muestra a continuación. Para obtener todos esos datos, ejecute el siguiente comando: SELECT * FROM family_members; El * de arriba significa que todas las columnas serán devueltas, que en este caso son id, nombre, género, especie y num_libros_leidos."
-                android:textAlignment="center"
-                android:textSize="18dp"
-                android:visibility="visible" />
+            <ScrollView
+                android:layout_width="336dp"
+                android:layout_height="298dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="319dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:text="En SQL, los datos suelen estar organizados en varias tablas. Por ejemplo, una base de datos de equipos deportivos puede tener las tablas equipos, jugadores y juegos. Una base de datos de bodas puede tener mesas de invitados, vendedores y listas de reproducción de música. Imagine que tenemos una tabla que almacena a los miembros de la familia con el nombre de cada miembro, especie, género y número de libros leídos. Comencemos por tomar todos los datos en una tabla. Tenemos una tabla llamada family_members que se muestra a continuación. Para obtener todos esos datos, ejecute el siguiente comando: SELECT * FROM family_members; El * de arriba significa que todas las columnas serán devueltas, que en este caso son id, nombre, género, especie y num_libros_leidos."
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </ScrollView>
 
             <TextView
                 android:id="@+id/textView5"
@@ -116,7 +127,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:orientation="vertical" >
+                    android:orientation="vertical">
 
                     <TableLayout
                         android:layout_width="match_parent"
@@ -159,9 +170,9 @@
 
                             <TextView
                                 android:id="@+id/textView12"
-                                android:layout_width="102dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:text="Num_libros"
+                                android:text="Num_libros_leidos"
                                 android:textAlignment="center" />
                         </TableRow>
 
@@ -224,40 +235,40 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="2"
-                                android:textColor="#FFFFFF"
-                                android:textAlignment="center" />
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
 
                             <TextView
                                 android:id="@+id/TxtNombre2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Mary"
-                                android:textColor="#FFFFFF"
-                                android:textAlignment="center" />
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
 
                             <TextView
                                 android:id="@+id/TxtGenero2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Femenino"
-                                android:textColor="#FFFFFF"
-                                android:textAlignment="center" />
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
 
                             <TextView
                                 android:id="@+id/TxtEspecie2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Humano"
-                                android:textColor="#FFFFFF"
-                                android:textAlignment="center" />
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
 
                             <TextView
                                 android:id="@+id/TxtLibros2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="180"
-                                android:textColor="#FFFFFF"
-                                android:textAlignment="center" />
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
                         </TableRow>
 
                         <TableRow
@@ -271,45 +282,58 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="3"
-                                android:textColor="#FFFFFF"
-                                android:textAlignment="center" />
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
 
                             <TextView
                                 android:id="@+id/TxtNombre3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Pickles"
-                                android:textColor="#FFFFFF"
-                                android:textAlignment="center" />
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
 
                             <TextView
                                 android:id="@+id/TxtGenero3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Masculino"
-                                android:textColor="#FFFFFF"
-                                android:textAlignment="center" />
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
 
                             <TextView
                                 android:id="@+id/TxtEspecie3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Perro"
-                                android:textColor="#FFFFFF"
-                                android:textAlignment="center" />
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
 
                             <TextView
                                 android:id="@+id/TxtLibros3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text=""
-                                android:textColor="#FFFFFF"
-                                android:textAlignment="center" />
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
                         </TableRow>
 
                     </TableLayout>
                 </LinearLayout>
             </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/BtnLeccion1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="regresar"
+                android:text="Regresar"
+                android:visibility="invisible" />
 
         </LinearLayout>
     </ScrollView>
