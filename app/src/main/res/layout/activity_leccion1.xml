@@ -7,8 +7,8 @@
     tools:context=".Leccion1">
 
     <ScrollView
-        android:layout_width="348dp"
-        android:layout_height="690dp"
+        android:layout_width="346dp"
+        android:layout_height="670dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -132,7 +132,6 @@
                     <TableLayout
                         android:layout_width="match_parent"
                         android:layout_height="101dp"
-
                         android:background="@color/black">
 
                         <TableRow
