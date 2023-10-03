@@ -10,9 +10,9 @@
         android:id="@+id/scrollView2"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="1dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,8 +30,10 @@
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="212dp"
+                android:autoText="false"
                 android:text="Bienvenido"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/BtnNivel1"
@@ -44,6 +46,7 @@
                 android:id="@+id/BtnNivel2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="leccion2"
                 android:text="Leccion 2" />
 
             <Button

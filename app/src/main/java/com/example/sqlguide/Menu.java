@@ -20,4 +20,8 @@ public class Menu extends AppCompatActivity {
     public void leccion1(View view){
         Intent d=new Intent(this, Leccion1.class);
         startActivity(d);}
+
+    public void leccion2(View view){
+        Intent d=new Intent(this, Leccion2.class);
+        startActivity(d);}
 }
