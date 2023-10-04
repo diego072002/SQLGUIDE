@@ -2,7 +2,9 @@ package com.example.sqlguide;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,7 +21,7 @@ public class Leccion1 extends AppCompatActivity {
     private EditText res;
     private TableRow tab1,tab2,tab3;
 
-    private Button bt1;
+    private Button bt1,btn2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +32,7 @@ public class Leccion1 extends AppCompatActivity {
         tab3=(TableRow) findViewById(R.id.Tabla3);
         res=(EditText) findViewById(R.id.EditLeccion1);
         bt1=(Button) findViewById(R.id.BtnLeccion1);
+
     }
 
     public void mostrar(View view){
@@ -54,8 +57,17 @@ public class Leccion1 extends AppCompatActivity {
     }
 
     public void regresar(View view){
+        guardar();
         Intent d=new Intent(this, Menu.class);
         d.putExtra("cont","1");
+
         startActivity(d);
+    }
+
+    private void guardar() {
+        SharedPreferences preferencia=getSharedPreferences("apuntador", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor=preferencia.edit();
+        editor.putString("nivel","2");
+        editor.commit();
     }
 }
