@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Leccion2">
+    tools:context=".Leccion1">
 
     <ScrollView
         android:layout_width="346dp"
@@ -34,21 +34,21 @@
                 android:layout_height="wrap_content"
                 android:indeterminate="false"
                 android:max="20"
-                android:progress="1"
+                android:progress="0"
                 android:progressTint="#35DC07" />
 
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Leccion 2"
+                android:text="Leccion 3"
                 android:textAlignment="center"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
             <ScrollView
                 android:layout_width="336dp"
-                android:layout_height="188dp">
+                android:layout_height="298dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -60,7 +60,7 @@
                         android:layout_width="319dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal"
-                        android:text="SELECT * recoge todos los campos (llamados columnas) de una tabla. Si sólo quisiéramos ver las columnas name y num_book_read, escribiríamos SELECT name, num_books_read FROM family_members;.  ¿Puedes devolver sólo las columnas nombre y especie?"
+                        android:text="Para poder seleccionar una fila en particular de esta tabla, utiliza WHERE. Por ejemplo, si necesitas devolver todas las filas correspondientes a humanos, escribiríamos SELECT * FROM family_members WHERE Especie = 'humano'; Recuerda que las comillas simples tienen que ir en la palabra human, ya que es un valor explicíto, no como el comando WHERE.  ¿Puedes devolver todas las filas que hacen referencia a dogs?"
                         android:textAlignment="center"
                         android:textSize="18dp"
                         android:visibility="visible" />
@@ -122,8 +122,7 @@
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textAlignment="center">
+                android:layout_height="match_parent">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -141,10 +140,24 @@
                             android:background="@color/white">
 
                             <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="43dp"
+                                android:layout_height="wrap_content"
+                                android:text="Id"
+                                android:textAlignment="center" />
+
+                            <TextView
                                 android:id="@+id/textView13"
                                 android:layout_width="95dp"
                                 android:layout_height="wrap_content"
                                 android:text="Nombre"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="73dp"
+                                android:layout_height="wrap_content"
+                                android:text="Genero"
                                 android:textAlignment="center" />
 
                             <TextView
@@ -154,55 +167,12 @@
                                 android:text="Especie"
                                 android:textAlignment="center" />
 
-                        </TableRow>
-
-                        <TableRow
-                            android:id="@+id/Tabla1"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:visibility="invisible">
-
                             <TextView
-                                android:id="@+id/TxtNombre1"
+                                android:id="@+id/textView12"
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Dave"
-                                android:textAlignment="center"
-                                android:textColor="#FAF7F7" />
-
-                            <TextView
-                                android:id="@+id/TxtEspecie1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Humano"
-                                android:textAlignment="center"
-                                android:textColor="#FFFFFF" />
-
-                        </TableRow>
-
-                        <TableRow
-                            android:id="@+id/Tabla2"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-
-                            android:visibility="invisible">
-
-                            <TextView
-                                android:id="@+id/TxtNombre2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Mary"
-                                android:textAlignment="center"
-                                android:textColor="#FFFFFF" />
-
-                            <TextView
-                                android:id="@+id/TxtEspecie2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Humano"
-                                android:textAlignment="center"
-                                android:textColor="#FFFFFF" />
-
+                                android:layout_height="match_parent"
+                                android:text="Num_libros_leidos"
+                                android:textAlignment="center" />
                         </TableRow>
 
                         <TableRow
@@ -210,6 +180,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:visibility="invisible">
+
+                            <TextView
+                                android:id="@+id/TxtId3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
 
                             <TextView
                                 android:id="@+id/TxtNombre3"
@@ -223,10 +201,25 @@
                                 android:id="@+id/TxtGenero3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:text="Masculino"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:id="@+id/TxtEspecie3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:text="Perro"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF" />
 
+                            <TextView
+                                android:id="@+id/TxtLibros3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
                         </TableRow>
 
                     </TableLayout>

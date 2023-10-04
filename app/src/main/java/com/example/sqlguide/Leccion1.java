@@ -21,7 +21,7 @@ public class Leccion1 extends AppCompatActivity {
     private EditText res;
     private TableRow tab1,tab2,tab3;
 
-    private Button bt1,btn2;
+    private Button bt1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,8 +59,6 @@ public class Leccion1 extends AppCompatActivity {
     public void regresar(View view){
         guardar();
         Intent d=new Intent(this, Menu.class);
-        d.putExtra("cont","1");
-
         startActivity(d);
     }
 

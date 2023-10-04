@@ -72,9 +72,12 @@ public class Menu extends AppCompatActivity {
         String nivel=preferencia.getString("nivel","1");
         ni.setText("Bienvenido\nNivel "+nivel);
 
+
         if (nivel.equals("2")){
             btn2.setEnabled(true);
-
+        } else if (nivel.equals("3")) {
+            btn2.setEnabled(true);
+            btn3.setEnabled(true);
         }
 
 
@@ -82,9 +85,15 @@ public class Menu extends AppCompatActivity {
 
     public void leccion1(View view){
         Intent d=new Intent(this, Leccion1.class);
-        startActivity(d);}
+        startActivity(d);
+    }
 
     public void leccion2(View view){
         Intent d=new Intent(this, Leccion2.class);
-        startActivity(d);}
+        startActivity(d);
+    }
+    public void leccion3(View view){
+        Intent d=new Intent(this, Leccion3.class);
+        startActivity(d);
+    }
 }
