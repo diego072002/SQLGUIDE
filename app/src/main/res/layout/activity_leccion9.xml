@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Leccion8">
+    tools:context=".Leccion9">
 
     <ScrollView
         android:layout_width="346dp"
@@ -34,14 +34,14 @@
                 android:layout_height="wrap_content"
                 android:indeterminate="false"
                 android:max="20"
-                android:progress="7"
+                android:progress="8"
                 android:progressTint="#35DC07" />
 
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Leccion 8"
+                android:text="Leccion 9"
                 android:textAlignment="center"
                 android:textSize="20dp"
                 android:textStyle="bold" />
@@ -60,7 +60,7 @@
                         android:layout_width="319dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal"
-                        android:text="Usando la cláusula WHERE, podemos encontrar filas donde un valor está en una lista de varios valores posibles. \nSELECT * FROM friends_of_pickles WHERE species IN ('cat', 'human'); devolvería a los amigos_de_los_pepinillos que son un gato o un humano.  \n\nPara encontrar filas que no están en una lista, use NOT IN en lugar de IN. ¿Puede ejecutar una consulta que devuelva las filas que no son perros o gatos?"
+                        android:text="Al poner DISTINCT después de SELECT, no devuelve duplicados. \nPor ejemplo, si ejecuta:  \nSELECT DISTINCT gender, species FROM friends_of_pickles WHERE height_cm menor que 100;, obtendrá las combinaciones de género/especie de los animales de menos de 100 cm de altura.  \n\nTenga en cuenta que aunque hay varios perros machos por debajo de esa altura, solo vemos una fila que devuelve &quot;macho&quot; y &quot;perro&quot;.  \n¿Puede devolver una lista de las distintas especies de animales de más de 50 cm de altura?"
                         android:textAlignment="center"
                         android:textSize="18dp"
                         android:visibility="visible" />
@@ -122,7 +122,8 @@
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="67dp">
+
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -131,7 +132,7 @@
 
                     <TableLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="101dp"
                         android:background="@color/black">
 
                         <TableRow
@@ -140,137 +141,48 @@
                             android:background="@color/white">
 
                             <TextView
-                                android:id="@+id/textView8"
-                                android:layout_width="43dp"
-                                android:layout_height="wrap_content"
-                                android:text="Id"
-                                android:textAlignment="center" />
-
-                            <TextView
-                                android:id="@+id/textView13"
-                                android:layout_width="95dp"
-                                android:layout_height="wrap_content"
-                                android:text="Nombre"
-                                android:textAlignment="center" />
-
-                            <TextView
-                                android:id="@+id/textView10"
-                                android:layout_width="73dp"
-                                android:layout_height="wrap_content"
-                                android:text="Genero"
-                                android:textAlignment="center" />
-
-                            <TextView
                                 android:id="@+id/textView11"
                                 android:layout_width="75dp"
                                 android:layout_height="match_parent"
                                 android:text="Especie"
                                 android:textAlignment="center" />
 
-                            <TextView
-                                android:id="@+id/textView12"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="Altura_cm"
-                                android:textAlignment="center" />
                         </TableRow>
 
                         <TableRow
-                            android:id="@+id/Tabla1"
+                            android:id="@+id/Tabla3"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:visibility="invisible">
 
                             <TextView
-                                android:id="@+id/TxtId1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="1"
-                                android:textAlignment="center"
-                                android:textColor="#FFFFFF" />
-
-                            <TextView
-                                android:id="@+id/TxtNombre1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Dave"
-                                android:textAlignment="center"
-                                android:textColor="#FAF7F7" />
-
-                            <TextView
-                                android:id="@+id/TxtGenero1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Masculino"
-                                android:textAlignment="center"
-                                android:textColor="#FFFBFB" />
-
-                            <TextView
-                                android:id="@+id/TxtEspecie1"
+                                android:id="@+id/TxtEspecie3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Humano"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF" />
 
-                            <TextView
-                                android:id="@+id/TxtLibros1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="180"
-                                android:textAlignment="center"
-                                android:textColor="#F8F7F7" />
                         </TableRow>
 
                         <TableRow
-                            android:id="@+id/Tabla2"
+                            android:id="@+id/Tabla4"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-
                             android:visibility="invisible">
 
                             <TextView
-                                android:id="@+id/TxtId2"
+                                android:id="@+id/TxtEspecie4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="2"
+                                android:text="Perro"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF" />
 
-                            <TextView
-                                android:id="@+id/TxtNombre2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Mary"
-                                android:textAlignment="center"
-                                android:textColor="#FFFFFF" />
-
-                            <TextView
-                                android:id="@+id/TxtGenero2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Femenino"
-                                android:textAlignment="center"
-                                android:textColor="#FFFFFF" />
-
-                            <TextView
-                                android:id="@+id/TxtEspecie2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Humano"
-                                android:textAlignment="center"
-                                android:textColor="#FFFFFF" />
-
-                            <TextView
-                                android:id="@+id/TxtLibros2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="160"
-                                android:textAlignment="center"
-                                android:textColor="#FFFFFF" />
                         </TableRow>
 
                     </TableLayout>
+
                 </LinearLayout>
             </HorizontalScrollView>
 
