@@ -60,12 +60,14 @@
                 android:id="@+id/BtnNivel4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="leccion4"
                 android:text="Leccion 4" />
 
             <Button
                 android:id="@+id/BtnNivel5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="leccion5"
                 android:text="Leccion 5" />
 
             <Button

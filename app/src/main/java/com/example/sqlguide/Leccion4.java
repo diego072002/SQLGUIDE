@@ -10,29 +10,30 @@ import android.widget.EditText;
 import android.widget.TableRow;
 import android.widget.Toast;
 
-public class Leccion3 extends AppCompatActivity {
+public class Leccion4 extends AppCompatActivity {
     private EditText res;
-    private TableRow tab3;
+    private TableRow tab1,tab2,tab3;
 
     private Button bt1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_leccion3);
+        setContentView(R.layout.activity_leccion4);
+        tab1=(TableRow) findViewById(R.id.Tabla1);
 
-        tab3=(TableRow) findViewById(R.id.Tabla3);
         res=(EditText) findViewById(R.id.EditLeccion1);
         bt1=(Button) findViewById(R.id.BtnLeccion1);
+
+
     }
     public void mostrar(View view){
 
         String v1 = res.getText().toString().toLowerCase();
-        String validacion = "select * from family_members where especie='perro';";
+        String validacion = "select * from family_members where num_libros_leidos > 190;";
 
         if (v1.equals(validacion)){
-
-            tab3.setVisibility(View.VISIBLE);
+            tab1.setVisibility(View.VISIBLE);
             bt1.setVisibility(View.VISIBLE);
 
             Toast.makeText(this, "¡Felicitaciones!, ¡Eso es correcto!", Toast.LENGTH_SHORT).show();
@@ -45,8 +46,11 @@ public class Leccion3 extends AppCompatActivity {
 
     }
     public void regresar(View view){
-
+        guardar();
         Intent d=new Intent(this, Menu.class);
         startActivity(d);
+    }
+
+    private void guardar() {
     }
 }

@@ -41,7 +41,7 @@ public class Menu extends AppCompatActivity {
         btn21=(Button) findViewById(R.id.BtnNivel21);
 
         ni=(TextView)findViewById(R.id.textView3);
-
+/*
         btn2.setEnabled(false);
         btn3.setEnabled(false);
         btn4.setEnabled(false);
@@ -63,7 +63,7 @@ public class Menu extends AppCompatActivity {
         btn20.setEnabled(false);
         btn21.setEnabled(false);
         cargar();
-
+*/
 
     }
 
@@ -94,6 +94,14 @@ public class Menu extends AppCompatActivity {
     }
     public void leccion3(View view){
         Intent d=new Intent(this, Leccion3.class);
+        startActivity(d);
+    }
+    public void leccion4(View view){
+        Intent d=new Intent(this, Leccion4.class);
+        startActivity(d);
+    }
+    public void leccion5(View view){
+        Intent d=new Intent(this, Leccion5.class);
         startActivity(d);
     }
 }

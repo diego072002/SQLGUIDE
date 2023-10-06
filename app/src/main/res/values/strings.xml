@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">SQL GUIDE</string>
+    <string name="leccion5">SQL acepta varios símbolos de desigualdad, incluidos:\n
+= "igual que"\n
+> "mayor que"\n
+"menor que"\n
+>= "mayor o igual que"\n
+= "menor o igual que"\n\n
+
+¿Puede devolver todas las filas en family_members donde num_libros_leidos es un valor mayor o igual a 180?</string>
 </resources>
