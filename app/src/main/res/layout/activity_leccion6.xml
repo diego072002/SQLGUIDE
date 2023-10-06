@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Leccion4">
+    tools:context=".Leccion6">
 
     <ScrollView
         android:layout_width="346dp"
@@ -34,14 +34,14 @@
                 android:layout_height="wrap_content"
                 android:indeterminate="false"
                 android:max="20"
-                android:progress="3"
+                android:progress="6"
                 android:progressTint="#35DC07" />
 
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Leccion 4"
+                android:text="Leccion 6"
                 android:textAlignment="center"
                 android:textSize="20dp"
                 android:textStyle="bold" />
@@ -60,7 +60,7 @@
                         android:layout_width="319dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal"
-                        android:text="Si queremos seleccionar solo miembros de la familia en función de un campo numérico, también podemos usar la palabra clave WHERE. Por ejemplo, si quisiéramos seleccionar miembros de la familia con num_books_read, escribiríamos SELECCIONE * FROM family_members WHERE num_books_read > 0; \n\n¿Puede ejecutar devolver todas las filas de miembros de la familia cuyo num_books_read sea mayor que 190?"
+                        android:text="En la parte DONDE de una consulta, puede buscar múltiples atributos usando la palabra clave AND. Por ejemplo, si quisiera encontrar a los amigos de Pickles que miden más de 25 cm de altura y son gatos, ejecutaría:\n SELECT * FROM friends_of_pickles WHERE especie = 'gato' AND altura_cm > 25;  \n\n¿Puedes encontrar a todos los amigos de Pickles que son perros y miden menos de 45 cm?"
                         android:textAlignment="center"
                         android:textSize="18dp"
                         android:visibility="visible" />
@@ -171,7 +171,7 @@
                                 android:id="@+id/textView12"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:text="Num_libros_leidos"
+                                android:text="Altura_cm"
                                 android:textAlignment="center" />
                         </TableRow>
 
@@ -185,7 +185,7 @@
                                 android:id="@+id/TxtId1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="1"
+                                android:text="5"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF" />
 
@@ -193,7 +193,7 @@
                                 android:id="@+id/TxtNombre1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Dave"
+                                android:text="Odie"
                                 android:textAlignment="center"
                                 android:textColor="#FAF7F7" />
 
@@ -209,7 +209,7 @@
                                 android:id="@+id/TxtEspecie1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Humano"
+                                android:text="Perro"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF" />
 
@@ -217,9 +217,57 @@
                                 android:id="@+id/TxtLibros1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="200"
+                                android:text="40"
                                 android:textAlignment="center"
                                 android:textColor="#F8F7F7" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/Tabla2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:visibility="invisible">
+
+                            <TextView
+                                android:id="@+id/TxtId2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="6"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:id="@+id/TxtNombre2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Jumpy"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:id="@+id/TxtGenero2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Masculino"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:id="@+id/TxtEspecie2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Perro"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:id="@+id/TxtLibros2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="35"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
                         </TableRow>
 
                     </TableLayout>

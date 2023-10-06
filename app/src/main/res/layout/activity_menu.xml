@@ -74,6 +74,7 @@
                 android:id="@+id/BtnNivel6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="leccion6"
                 android:text="Leccion 6" />
 
             <Button
