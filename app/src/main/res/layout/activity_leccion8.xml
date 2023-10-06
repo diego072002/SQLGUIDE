@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Leccion8">
+
+    <ScrollView
+        android:layout_width="346dp"
+        android:layout_height="670dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Progreso"
+                android:textColor="#31909E" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:max="20"
+                android:progress="6"
+                android:progressTint="#35DC07" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Leccion 8"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:layout_width="336dp"
+                android:layout_height="298dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="319dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Usando la cláusula WHERE, podemos encontrar filas donde un valor está en una lista de varios valores posibles. \nSELECT * FROM friends_of_pickles WHERE species IN ('cat', 'human'); devolvería a los amigos_de_los_pepinillos que son un gato o un humano.  \n\nPara encontrar filas que no están en una lista, use NOT IN en lugar de IN. ¿Puede ejecutar una consulta que devuelva las filas que no son perros o gatos?"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/EditLeccion1"
+                        android:layout_width="241dp"
+                        android:layout_height="77dp"
+                        android:layout_weight="1"
+                        android:background="#000000"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:hint="Ingresa aqui el comando"
+                        android:inputType="textMultiLine"
+                        android:textColor="#FAFAFA" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="12dp"
+                        android:layout_height="56dp"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="95dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mostrar"
+                        android:text="Correr SQL" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/black">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white">
+
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="43dp"
+                                android:layout_height="wrap_content"
+                                android:text="Id"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="95dp"
+                                android:layout_height="wrap_content"
+                                android:text="Nombre"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="73dp"
+                                android:layout_height="wrap_content"
+                                android:text="Genero"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="75dp"
+                                android:layout_height="match_parent"
+                                android:text="Especie"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Altura_cm"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/Tabla1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="invisible">
+
+                            <TextView
+                                android:id="@+id/TxtId1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:id="@+id/TxtNombre1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dave"
+                                android:textAlignment="center"
+                                android:textColor="#FAF7F7" />
+
+                            <TextView
+                                android:id="@+id/TxtGenero1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Masculino"
+                                android:textAlignment="center"
+                                android:textColor="#FFFBFB" />
+
+                            <TextView
+                                android:id="@+id/TxtEspecie1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Humano"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:id="@+id/TxtLibros1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="180"
+                                android:textAlignment="center"
+                                android:textColor="#F8F7F7" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/Tabla2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:visibility="invisible">
+
+                            <TextView
+                                android:id="@+id/TxtId2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:id="@+id/TxtNombre2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mary"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:id="@+id/TxtGenero2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Femenino"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:id="@+id/TxtEspecie2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Humano"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:id="@+id/TxtLibros2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="160"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF" />
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/BtnLeccion1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="regresar"
+                android:text="Regresar"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
