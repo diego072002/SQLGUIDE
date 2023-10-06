@@ -120,4 +120,8 @@ public class Menu extends AppCompatActivity {
         Intent d=new Intent(this, Leccion9.class);
         startActivity(d);
     }
+    public void leccion10(View view){
+        Intent d=new Intent(this, Leccion10.class);
+        startActivity(d);
+    }
 }

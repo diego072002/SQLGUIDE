@@ -41,7 +41,7 @@
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Leccion 7"
+                android:text="Lección 7: OR"
                 android:textAlignment="center"
                 android:textSize="20dp"
                 android:textStyle="bold" />

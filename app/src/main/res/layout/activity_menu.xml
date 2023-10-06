@@ -102,6 +102,7 @@
                 android:id="@+id/BtnNivel10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="leccion10"
                 android:text="Leccion 10" />
 
             <Button

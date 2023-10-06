@@ -41,14 +41,14 @@
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Leccion 5"
+                android:text="Lección 5: WHERE ... más grande que o igual"
                 android:textAlignment="center"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
             <ScrollView
-                android:layout_width="336dp"
-                android:layout_height="298dp">
+                android:layout_width="match_parent"
+                android:layout_height="270dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"

@@ -13,6 +13,9 @@
         android:theme="@style/Theme.SQLGUIDE"
         tools:targetApi="31">
         <activity
+            android:name=".Leccion10"
+            android:exported="false" />
+        <activity
             android:name=".Leccion9"
             android:exported="false" />
         <activity
