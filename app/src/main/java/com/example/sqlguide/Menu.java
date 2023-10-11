@@ -51,6 +51,9 @@ public class Menu extends AppCompatActivity {
         btn8.setEnabled(false);
         btn9.setEnabled(false);
         btn10.setEnabled(false);
+          cargar();
+
+ */
         btn11.setEnabled(false);
         btn12.setEnabled(false);
         btn13.setEnabled(false);
@@ -62,8 +65,7 @@ public class Menu extends AppCompatActivity {
         btn19.setEnabled(false);
         btn20.setEnabled(false);
         btn21.setEnabled(false);
-        cargar();
-*/
+
 
     }
 

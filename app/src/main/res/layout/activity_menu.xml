@@ -29,11 +29,23 @@
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
-                android:layout_height="212dp"
+                android:layout_height="46dp"
                 android:autoText="false"
-                android:text="Bienvenido"
+                android:text="Elige una leccion"
                 android:textAlignment="center"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                app:srcCompat="@mipmap/sql" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
             <Button
                 android:id="@+id/BtnNivel1"
