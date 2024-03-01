@@ -7,8 +7,8 @@
     tools:context=".Leccion1">
 
     <ScrollView
-        android:layout_width="346dp"
-        android:layout_height="670dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,7 +47,7 @@
                 android:textStyle="bold" />
 
             <ScrollView
-                android:layout_width="336dp"
+                android:layout_width="wrap_content"
                 android:layout_height="298dp">
 
                 <LinearLayout
@@ -57,13 +57,14 @@
 
                     <TextView
                         android:id="@+id/textView7"
-                        android:layout_width="319dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal"
                         android:text="En SQL, los datos suelen estar organizados en varias tablas. Por ejemplo, una base de datos de equipos deportivos puede tener las tablas equipos, jugadores y juegos. Una base de datos de bodas puede tener mesas de invitados, vendedores y listas de reproducción de música. Imagine que tenemos una tabla que almacena a los miembros de la familia con el nombre de cada miembro, especie, género y número de libros leídos. Comencemos por tomar todos los datos en una tabla. Tenemos una tabla llamada family_members que se muestra a continuación. Para obtener todos esos datos, ejecute el siguiente comando: SELECT * FROM family_members; El * de arriba significa que todas las columnas serán devueltas, que en este caso son id, nombre, género, especie y num_libros_leidos."
                         android:textAlignment="center"
+                        android:layout_margin="15dp"
                         android:textSize="18dp"
-                        android:visibility="visible" />
+                        android:visibility="visible"/>
                 </LinearLayout>
             </ScrollView>
 
@@ -86,7 +87,7 @@
 
                     <EditText
                         android:id="@+id/EditLeccion1"
-                        android:layout_width="241dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="77dp"
                         android:layout_weight="1"
                         android:background="#000000"

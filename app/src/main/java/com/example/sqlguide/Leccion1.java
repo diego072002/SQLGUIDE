@@ -47,6 +47,7 @@ public class Leccion1 extends AppCompatActivity {
             bt1.setVisibility(View.VISIBLE);
 
             Toast.makeText(this, "¡Felicitaciones!, ¡Eso es correcto!", Toast.LENGTH_SHORT).show();
+            guardar();
 
         }else{
             Toast.makeText(this, "La consulta que has introducido no ha devuelto los resultados adecuados. Por favor, inténtalo de nuevo.", Toast.LENGTH_LONG).show();
@@ -57,7 +58,7 @@ public class Leccion1 extends AppCompatActivity {
     }
 
     public void regresar(View view){
-        guardar();
+
         Intent d=new Intent(this, Menu.class);
         startActivity(d);
     }

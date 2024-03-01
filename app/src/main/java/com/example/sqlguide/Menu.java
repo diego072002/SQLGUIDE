@@ -30,18 +30,10 @@ public class Menu extends AppCompatActivity {
         btn10=(Button) findViewById(R.id.BtnNivel10);
         btn11=(Button) findViewById(R.id.BtnNivel11);
         btn12=(Button) findViewById(R.id.BtnNivel12);
-        btn13=(Button) findViewById(R.id.BtnNivel13);
-        btn14=(Button) findViewById(R.id.BtnNivel14);
-        btn15=(Button) findViewById(R.id.BtnNivel15);
-        btn16=(Button) findViewById(R.id.BtnNivel16);
-        btn17=(Button) findViewById(R.id.BtnNivel17);
-        btn18=(Button) findViewById(R.id.BtnNivel18);
-        btn19=(Button) findViewById(R.id.BtnNivel19);
-        btn20=(Button) findViewById(R.id.BtnNivel20);
-        btn21=(Button) findViewById(R.id.BtnNivel21);
+
 
         ni=(TextView)findViewById(R.id.textView3);
-/*
+
         btn2.setEnabled(false);
         btn3.setEnabled(false);
         btn4.setEnabled(false);
@@ -51,20 +43,10 @@ public class Menu extends AppCompatActivity {
         btn8.setEnabled(false);
         btn9.setEnabled(false);
         btn10.setEnabled(false);
-          cargar();
-
- */
         btn11.setEnabled(false);
         btn12.setEnabled(false);
-        btn13.setEnabled(false);
-        btn14.setEnabled(false);
-        btn15.setEnabled(false);
-        btn16.setEnabled(false);
-        btn17.setEnabled(false);
-        btn18.setEnabled(false);
-        btn19.setEnabled(false);
-        btn20.setEnabled(false);
-        btn21.setEnabled(false);
+          cargar();
+
 
 
     }
@@ -80,6 +62,80 @@ public class Menu extends AppCompatActivity {
         } else if (nivel.equals("3")) {
             btn2.setEnabled(true);
             btn3.setEnabled(true);
+        } else if (nivel.equals(("4"))) {
+            btn2.setEnabled(true);
+            btn3.setEnabled(true);
+            btn4.setEnabled(true);
+
+        } else if (nivel.equals("5")) {
+            btn2.setEnabled(true);
+            btn3.setEnabled(true);
+            btn4.setEnabled(true);
+            btn5.setEnabled(true);
+        } else if (nivel.equals("6")) {
+            btn2.setEnabled(true);
+            btn3.setEnabled(true);
+            btn4.setEnabled(true);
+            btn5.setEnabled(true);
+            btn6.setEnabled(true);
+        } else if (nivel.equals("7")) {
+            btn2.setEnabled(true);
+            btn3.setEnabled(true);
+            btn4.setEnabled(true);
+            btn5.setEnabled(true);
+            btn6.setEnabled(true);
+            btn7.setEnabled(true);
+        } else if (nivel.equals("8")) {
+            btn2.setEnabled(true);
+            btn3.setEnabled(true);
+            btn4.setEnabled(true);
+            btn5.setEnabled(true);
+            btn6.setEnabled(true);
+            btn7.setEnabled(true);
+            btn8.setEnabled(true);
+        } else if (nivel.equals("9")) {
+            btn2.setEnabled(true);
+            btn3.setEnabled(true);
+            btn4.setEnabled(true);
+            btn5.setEnabled(true);
+            btn6.setEnabled(true);
+            btn7.setEnabled(true);
+            btn8.setEnabled(true);
+            btn9.setEnabled(true);
+        }else if (nivel.equals("10")) {
+            btn2.setEnabled(true);
+            btn3.setEnabled(true);
+            btn4.setEnabled(true);
+            btn5.setEnabled(true);
+            btn6.setEnabled(true);
+            btn7.setEnabled(true);
+            btn8.setEnabled(true);
+            btn9.setEnabled(true);
+            btn10.setEnabled(true);
+        }else if (nivel.equals("11")) {
+            btn2.setEnabled(true);
+            btn3.setEnabled(true);
+            btn4.setEnabled(true);
+            btn5.setEnabled(true);
+            btn6.setEnabled(true);
+            btn7.setEnabled(true);
+            btn8.setEnabled(true);
+            btn9.setEnabled(true);
+            btn10.setEnabled(true);
+            btn11.setEnabled(true);
+
+        }else if (nivel.equals("12")) {
+            btn2.setEnabled(true);
+            btn3.setEnabled(true);
+            btn4.setEnabled(true);
+            btn5.setEnabled(true);
+            btn6.setEnabled(true);
+            btn7.setEnabled(true);
+            btn8.setEnabled(true);
+            btn9.setEnabled(true);
+            btn10.setEnabled(true);
+            btn11.setEnabled(true);
+            btn12.setEnabled(true);
         }
 
 

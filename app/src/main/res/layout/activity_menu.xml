@@ -129,60 +129,6 @@
                 android:layout_height="wrap_content"
                 android:text="Leccion 12" />
 
-            <Button
-                android:id="@+id/BtnNivel13"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Leccion 13" />
-
-            <Button
-                android:id="@+id/BtnNivel14"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Leccion 14" />
-
-            <Button
-                android:id="@+id/BtnNivel15"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Leccion 15" />
-
-            <Button
-                android:id="@+id/BtnNivel16"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Leccion 16" />
-
-            <Button
-                android:id="@+id/BtnNivel17"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Leccion 17" />
-
-            <Button
-                android:id="@+id/BtnNivel18"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Leccion 18" />
-
-            <Button
-                android:id="@+id/BtnNivel19"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Leccion 19" />
-
-            <Button
-                android:id="@+id/BtnNivel20"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Leccion 20" />
-
-            <Button
-                android:id="@+id/BtnNivel21"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Leccion 21" />
-
 
         </LinearLayout>
     </ScrollView>
